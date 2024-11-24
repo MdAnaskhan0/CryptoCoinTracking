@@ -3,6 +3,7 @@ import React from "react";
 import { useContext,useState } from "react";
 import { CoinContext } from "../../Context/CoinContext";
 import { useEffect } from "react";
+ 
 
 const Home = () => {
 
