@@ -95,7 +95,7 @@ const SignUp = () => {
           <div className="mt-6">
             <button
               type="submit"
-              className="w-full bg-blue-500 text-white p-3 rounded-md shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full bg-indigo-500 text-white p-3 rounded-md shadow-md hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
             >
               Sign Up
             </button>
