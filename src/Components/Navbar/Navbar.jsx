@@ -57,7 +57,7 @@ const Navbar = () => {
         <div
           className={`${
             mobileMenuOpen ? "block" : "hidden"
-          } md:flex justify-end gap-4 text-lg font-semibold`}
+          } md:flex justify-end gap-4 text-md font-semibold`}
         >
           <ul className="flex flex-col md:flex-row gap-4 text-center">
             <li className="hover:text-indigo-700">
@@ -67,7 +67,7 @@ const Navbar = () => {
               <Link to="/features">Features</Link>
             </li>
             <li className="hover:text-indigo-700">
-              <Link to="/pricing">Pricing</Link>
+              <Link to="/about">About us</Link>
             </li>
             <li className="hover:text-indigo-700">
               <Link to="/blog">Blog</Link>
@@ -86,9 +86,8 @@ const Navbar = () => {
             <option value="BDT">BDT</option>
             <option value="inr">INR</option>
           </select>
-          <button className="hidden md:flex gap-2 text-lg font-semibold items-center text-white bg-indigo-700 px-4 py-2 rounded-md">
-            SignUp <FaArrowRight />
-          </button>
+          <Link to="/signup" className="hidden md:flex gap-2 text-lg font-semibold items-center text-white bg-indigo-700 px-4 py-2 rounded-md">
+          SignUp <FaArrowRight /></Link>
         </div>
       </div>
 
@@ -110,8 +109,8 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="hover:text-indigo-700">
-            <Link to="/pricing" onClick={() => setMobileMenuOpen(false)}>
-              Pricing
+            <Link to="/about" onClick={() => setMobileMenuOpen(false)}>
+              About us
             </Link>
           </li>
           <li className="hover:text-indigo-700">
@@ -125,15 +124,13 @@ const Navbar = () => {
               className="w-full bg-transparent text-lg font-semibold"
             >
               <option value="usd">USD</option>
+              {/* <option value="bdt"></option> */}
               <option value="eur">EUR</option>
-              <option value="BDT">BDT</option>
               <option value="inr">INR</option>
             </select>
           </li>
           <li className="mt-4">
-            <button className="w-full bg-indigo-600 text-white text-sm py-1 px-2 flex items-center gap-2 font-medium hover:bg-indigo-700 transition duration-300 ease-in-out border border-indigo-600">
-              Sign up <FaArrowRight />
-            </button>
+            <Link to="/signup" className="text-white bg-indigo-700 px-4 py-2 rounded-md block text-center"> SignUp</Link>
           </li>
         </ul>
       </div>

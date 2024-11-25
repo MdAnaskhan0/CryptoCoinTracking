@@ -3,6 +3,13 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      scrollbar: {
+        hide: {
+          '&::-webkit-scrollbar': { display: 'none' },
+          '-ms-overflow-style': 'none', 
+          'scrollbar-width': 'none',
+        },
+      },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },
@@ -166,5 +173,8 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide'),
+    require("daisyui"),
+  ],
 };
